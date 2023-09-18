@@ -34,4 +34,4 @@ One alternative would be to just generate a few games per day, perhaps just one 
 
 Created with IntelliJ and Java 17.
 
-`./gradlew bootRun` should be sufficient to run it/
+`gradle bootRun` should be sufficient to run it/
