@@ -34,4 +34,15 @@ One alternative would be to just generate a few games per day, perhaps just one 
 
 Created with IntelliJ and Java 17.
 
-`gradle bootRun` should be sufficient to run it/
+`gradle bootRun` should be sufficient to run it.
+
+Once running you can start a new game via `POST localhost:8080/start-game` (must have a header called username, with any value).
+
+You can then copy the instance id from the response to make guesses at what the word is, using the guess endpoint;
+```
+POST localhost:8080/guess/{instanceId}
+{
+	"guess": "vehicle"
+}
+```
+and the same username header as before.
